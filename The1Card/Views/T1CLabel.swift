@@ -12,7 +12,7 @@ class T1CLabel: UILabel {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.textColor = UIColor.gray
+        self.textColor = UIColor.darkGray
     }
 
 }

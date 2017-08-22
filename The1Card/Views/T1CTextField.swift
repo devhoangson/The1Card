@@ -14,8 +14,8 @@ class T1CTextField: UITextField {
     private let PADDING_LEFT_TEXTFIELD: CGFloat = 10
     private let BORDER_WIDTH_TEXTFIELD: CGFloat = 1
     
-    private let DEFAULT_BORDER_COLOR = UIColor.gray.cgColor
-    private let FOCUS_BORDER_COLOR = UIColor.red.cgColor
+    private let DEFAULT_BORDER_COLOR = UIColor.lightGray.cgColor
+    private let FOCUS_BORDER_COLOR = UIColor.black.cgColor
     
     private let FONT_SIZE: CGFloat = 12
 

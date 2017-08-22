@@ -10,32 +10,19 @@ import UIKit
 
 class T1CButton: UIButton {
     
-   enum BorderColor:String {
-        case Red = "red"
-        case Gray = "gray"
-        case Default = "clear"
-    }
-
-    
-    
-    private let CORNER_RADIUS: CGFloat = 5
+    private let CORNER_RADIUS: CGFloat = 20
     private let BORDER_WIDTH_BUTTON: CGFloat = 1
     
     private let DEFAULT_BORDER_COLOR = UIColor.clear.cgColor
     
     private let FONT_SIZE: CGFloat = 15
     
-    @IBInspectable var color: String? {
-        get{
-            return "gray"
-        }
-        set{
-            if color == "gray" {
-                self.layer.borderColor = UIColor.gray.cgColor
-            }
+    @IBInspectable var borderColor: UIColor? {
+        didSet {
+            self.layer.borderColor = borderColor?.cgColor
         }
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.setupUI()
@@ -47,7 +34,6 @@ class T1CButton: UIButton {
         self.layer.borderWidth = BORDER_WIDTH_BUTTON
         
         self.titleLabel?.font = UIFont.systemFont(ofSize: FONT_SIZE)
-        self.setTitleColor(UIColor.red, for: UIControlState.normal)
     }
 
 }
