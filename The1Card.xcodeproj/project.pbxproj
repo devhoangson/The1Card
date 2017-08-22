@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2F000A1F4BF24100E50169 /* no-image-available.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2F00091F4BF24100E50169 /* no-image-available.png */; };
 		FA069E471F4B2E790050A30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E461F4B2E790050A30B /* AppDelegate.swift */; };
 		FA069E4C1F4B2E790050A30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA069E4A1F4B2E790050A30B /* Main.storyboard */; };
 		FA069E4E1F4B2E790050A30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA069E4D1F4B2E790050A30B /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB2F00091F4BF24100E50169 /* no-image-available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-image-available.png"; sourceTree = "<group>"; };
 		FA069E431F4B2E790050A30B /* The1Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The1Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA069E461F4B2E790050A30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA069E4B1F4B2E790050A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,13 +142,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2F00071F4BF23500E50169 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F00081F4BF23500E50169 /* Images */,
+			);
+			name = Resources;
+			path = The1Card/Resources;
+			sourceTree = "<group>";
+		};
+		EB2F00081F4BF23500E50169 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F00091F4BF24100E50169 /* no-image-available.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		FA069E3A1F4B2E790050A30B = {
 			isa = PBXGroup;
 			children = (
 				FA069E781F4B2F1F0050A30B /* Controllers */,
 				FA069EE01F4B3BEF0050A30B /* Libs */,
+				EB2F00071F4BF23500E50169 /* Resources */,
 				FA069E791F4B2F1F0050A30B /* Models */,
-				FA069E7A1F4B2F1F0050A30B /* Resources */,
 				FA069E7B1F4B2F1F0050A30B /* Views */,
 				FA069E451F4B2E790050A30B /* The1Card */,
 				FA069E5A1F4B2E7A0050A30B /* The1CardTests */,
@@ -227,14 +246,6 @@
 			);
 			name = Models;
 			path = The1Card/Models;
-			sourceTree = "<group>";
-		};
-		FA069E7A1F4B2F1F0050A30B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			path = The1Card/Resources;
 			sourceTree = "<group>";
 		};
 		FA069E7B1F4B2F1F0050A30B /* Views */ = {
@@ -556,6 +567,7 @@
 				FA069ECA1F4B34160050A30B /* T1CSetupPhoneNumberViewController.xib in Resources */,
 				FA069E7F1F4B2F5F0050A30B /* T1CWelcomeViewController.xib in Resources */,
 				FA069E511F4B2E790050A30B /* LaunchScreen.storyboard in Resources */,
+				EB2F000A1F4BF24100E50169 /* no-image-available.png in Resources */,
 				FA069E9D1F4B31A40050A30B /* T1CLoginViewController.xib in Resources */,
 				FA069E941F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib in Resources */,
 				FA069EA31F4B31F00050A30B /* T1CVerifyEmailViewController.xib in Resources */,
@@ -858,6 +870,7 @@
 				FA069E6D1F4B2E7A0050A30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA069E6E1F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1CardTests" */ = {
 			isa = XCConfigurationList;
@@ -866,6 +879,7 @@
 				FA069E701F4B2E7A0050A30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA069E711F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1CardUITests" */ = {
 			isa = XCConfigurationList;
@@ -874,6 +888,7 @@
 				FA069E731F4B2E7A0050A30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

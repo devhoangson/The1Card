@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EVo-FU-VPS">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EVo-FU-VPS">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,23 +18,89 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpH-fn-78E">
-                                <rect key="frame" x="187" y="241" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmw-uS-x7b" customClass="T1CButton" customModule="The1Card" customModuleProvider="target">
+                                <rect key="frame" x="21" y="453" width="278" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VMM-Ad-cwO"/>
+                                    <constraint firstAttribute="width" constant="278" id="fRo-De-p7C"/>
+                                </constraints>
+                                <state key="normal" title="I have an existing membership">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image-available.png" translatesAutoresizingMaskIntoConstraints="NO" id="TJ6-gk-ib5">
+                                <rect key="frame" x="40" y="196" width="240" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="ETg-PY-vUP"/>
+                                    <constraint firstAttribute="width" constant="240" id="VkS-9j-GYD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there. Are you ready for The 1 experience?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW7-vw-b8T" customClass="T1CLabel" customModule="The1Card" customModuleProvider="target">
+                                <rect key="frame" x="55" y="72" width="211" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="RhO-Zr-Bod"/>
+                                    <constraint firstAttribute="height" constant="81" id="suF-E4-Q6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore The 1 Bonanza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23g-Ob-bKN" customClass="T1CLabel" customModule="The1Card" customModuleProvider="target">
+                                <rect key="frame" x="40.5" y="527" width="239" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7a6-5q-993"/>
+                                    <constraint firstAttribute="width" constant="239" id="MNh-gF-hZS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iz-Lz-A0T">
+                                <rect key="frame" x="64" y="158" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpH-fn-78E" customClass="T1CButton" customModule="The1Card" customModuleProvider="target">
+                                <rect key="frame" x="21" y="401" width="278" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BdF-O2-KGI"/>
+                                    <constraint firstAttribute="width" constant="278" id="jYp-4K-7vS"/>
+                                </constraints>
+                                <state key="normal" title="I don't have an existing membership">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HW7-vw-b8T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1rl-l6-U2P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="23g-Ob-bKN" secondAttribute="bottom" constant="20" id="SzV-ku-82H"/>
+                            <constraint firstItem="HW7-vw-b8T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="TCS-iF-Ond"/>
+                            <constraint firstItem="Dmw-uS-x7b" firstAttribute="top" secondItem="hpH-fn-78E" secondAttribute="bottom" constant="12" id="WAC-LR-rLn"/>
+                            <constraint firstItem="TJ6-gk-ib5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wg9-mo-aIr"/>
+                            <constraint firstItem="23g-Ob-bKN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gvc-7E-pGi"/>
+                            <constraint firstItem="TJ6-gk-ib5" firstAttribute="top" secondItem="HW7-vw-b8T" secondAttribute="bottom" constant="43" id="psG-Gw-jKq"/>
+                            <constraint firstItem="Dmw-uS-x7b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcA-ZE-zSs"/>
+                            <constraint firstItem="hpH-fn-78E" firstAttribute="top" secondItem="TJ6-gk-ib5" secondAttribute="bottom" constant="10" id="rhw-B7-sFx"/>
+                            <constraint firstItem="hpH-fn-78E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uyc-vP-r9E"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dpF-Eo-alU"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="34.632683658170919"/>
+            <point key="canvasLocation" x="796.875" y="29.577464788732396"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="MJL-R8-LSK">
@@ -55,4 +121,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="-648.12593703148434"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="no-image-available.png" width="800" height="450"/>
+    </resources>
 </document>
