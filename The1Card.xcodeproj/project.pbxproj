@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA069E471F4B2E790050A30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E461F4B2E790050A30B /* AppDelegate.swift */; };
+		FA069E4C1F4B2E790050A30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA069E4A1F4B2E790050A30B /* Main.storyboard */; };
+		FA069E4E1F4B2E790050A30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA069E4D1F4B2E790050A30B /* Assets.xcassets */; };
+		FA069E511F4B2E790050A30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA069E4F1F4B2E790050A30B /* LaunchScreen.storyboard */; };
+		FA069E5C1F4B2E7A0050A30B /* The1CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E5B1F4B2E7A0050A30B /* The1CardTests.swift */; };
+		FA069E671F4B2E7A0050A30B /* The1CardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E661F4B2E7A0050A30B /* The1CardUITests.swift */; };
+		FA069E7E1F4B2F5F0050A30B /* T1CWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E7C1F4B2F5F0050A30B /* T1CWelcomeViewController.swift */; };
+		FA069E7F1F4B2F5F0050A30B /* T1CWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069E7D1F4B2F5F0050A30B /* T1CWelcomeViewController.xib */; };
+		FA069E841F4B30360050A30B /* T1CStartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E821F4B30360050A30B /* T1CStartupViewController.swift */; };
+		FA069E891F4B30800050A30B /* T1CVerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E871F4B30800050A30B /* T1CVerifyPhoneNumberViewController.swift */; };
+		FA069E8A1F4B30800050A30B /* T1CVerifyPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069E881F4B30800050A30B /* T1CVerifyPhoneNumberViewController.xib */; };
+		FA069E8E1F4B30B40050A30B /* T1CEnterOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E8C1F4B30B40050A30B /* T1CEnterOTPViewController.swift */; };
+		FA069E8F1F4B30B40050A30B /* T1CEnterOTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069E8D1F4B30B40050A30B /* T1CEnterOTPViewController.xib */; };
+		FA069E931F4B30DD0050A30B /* T1CEnterPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E911F4B30DD0050A30B /* T1CEnterPinCodeViewController.swift */; };
+		FA069E941F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069E921F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib */; };
+		FA069E981F4B316E0050A30B /* T1CRegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E961F4B316E0050A30B /* T1CRegisterSuccessViewController.swift */; };
+		FA069E991F4B316E0050A30B /* T1CRegisterSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069E971F4B316E0050A30B /* T1CRegisterSuccessViewController.xib */; };
+		FA069E9C1F4B31A40050A30B /* T1CLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069E9A1F4B31A40050A30B /* T1CLoginViewController.swift */; };
+		FA069E9D1F4B31A40050A30B /* T1CLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069E9B1F4B31A40050A30B /* T1CLoginViewController.xib */; };
+		FA069EA21F4B31F00050A30B /* T1CVerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EA01F4B31F00050A30B /* T1CVerifyEmailViewController.swift */; };
+		FA069EA31F4B31F00050A30B /* T1CVerifyEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069EA11F4B31F00050A30B /* T1CVerifyEmailViewController.xib */; };
+		FA069EAC1F4B32B30050A30B /* T1CRegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EAA1F4B32B30050A30B /* T1CRegisterAccountViewController.swift */; };
+		FA069EAD1F4B32B30050A30B /* T1CRegisterAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069EAB1F4B32B30050A30B /* T1CRegisterAccountViewController.xib */; };
+		FA069EB11F4B32F10050A30B /* T1CCreatePinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EAF1F4B32F10050A30B /* T1CCreatePinCodeViewController.swift */; };
+		FA069EB21F4B32F10050A30B /* T1CCreatePinCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069EB01F4B32F10050A30B /* T1CCreatePinCodeViewController.xib */; };
+		FA069EB61F4B33350050A30B /* T1CAddInfomationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EB41F4B33350050A30B /* T1CAddInfomationsViewController.swift */; };
+		FA069EB71F4B33350050A30B /* T1CAddInfomationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069EB51F4B33350050A30B /* T1CAddInfomationsViewController.xib */; };
+		FA069EBA1F4B33510050A30B /* T1CBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EB91F4B33510050A30B /* T1CBaseViewController.swift */; };
+		FA069EBC1F4B33660050A30B /* T1CBaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EBB1F4B33660050A30B /* T1CBaseObject.swift */; };
+		FA069EC41F4B33ED0050A30B /* T1CSupportAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EC21F4B33ED0050A30B /* T1CSupportAccountViewController.swift */; };
+		FA069EC51F4B33ED0050A30B /* T1CSupportAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069EC31F4B33ED0050A30B /* T1CSupportAccountViewController.xib */; };
+		FA069EC91F4B34160050A30B /* T1CSetupPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EC71F4B34160050A30B /* T1CSetupPhoneNumberViewController.swift */; };
+		FA069ECA1F4B34160050A30B /* T1CSetupPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA069EC81F4B34160050A30B /* T1CSetupPhoneNumberViewController.xib */; };
+		FA069ECC1F4B34790050A30B /* T1CTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069ECB1F4B34790050A30B /* T1CTextField.swift */; };
+		FA069ED31F4B34D40050A30B /* T1CLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069ED21F4B34D40050A30B /* T1CLabel.swift */; };
+		FA069EDC1F4B39FD0050A30B /* T1CConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EDB1F4B39FD0050A30B /* T1CConstants.swift */; };
+		FA069EDE1F4B3A0A0050A30B /* T1CAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EDD1F4B3A0A0050A30B /* T1CAPI.swift */; };
+		FA069EE31F4B3C4B0050A30B /* T1CNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EE21F4B3C4B0050A30B /* T1CNavigationViewController.swift */; };
+		FA069EE51F4B44C30050A30B /* T1CButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EE41F4B44C30050A30B /* T1CButton.swift */; };
+		FA069EE81F4B45BB0050A30B /* T1CBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EE71F4B45BB0050A30B /* T1CBaseTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA069E581F4B2E7A0050A30B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA069E3B1F4B2E790050A30B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA069E421F4B2E790050A30B;
+			remoteInfo = The1Card;
+		};
+		FA069E631F4B2E7A0050A30B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA069E3B1F4B2E790050A30B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA069E421F4B2E790050A30B;
+			remoteInfo = The1Card;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA069E431F4B2E790050A30B /* The1Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The1Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA069E461F4B2E790050A30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA069E4B1F4B2E790050A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA069E4D1F4B2E790050A30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA069E501F4B2E790050A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA069E521F4B2E790050A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA069E571F4B2E7A0050A30B /* The1CardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = The1CardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA069E5B1F4B2E7A0050A30B /* The1CardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The1CardTests.swift; sourceTree = "<group>"; };
+		FA069E5D1F4B2E7A0050A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA069E621F4B2E7A0050A30B /* The1CardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = The1CardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA069E661F4B2E7A0050A30B /* The1CardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The1CardUITests.swift; sourceTree = "<group>"; };
+		FA069E681F4B2E7A0050A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA069E7C1F4B2F5F0050A30B /* T1CWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CWelcomeViewController.swift; sourceTree = "<group>"; };
+		FA069E7D1F4B2F5F0050A30B /* T1CWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CWelcomeViewController.xib; sourceTree = "<group>"; };
+		FA069E821F4B30360050A30B /* T1CStartupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CStartupViewController.swift; sourceTree = "<group>"; };
+		FA069E871F4B30800050A30B /* T1CVerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CVerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		FA069E881F4B30800050A30B /* T1CVerifyPhoneNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CVerifyPhoneNumberViewController.xib; sourceTree = "<group>"; };
+		FA069E8C1F4B30B40050A30B /* T1CEnterOTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CEnterOTPViewController.swift; sourceTree = "<group>"; };
+		FA069E8D1F4B30B40050A30B /* T1CEnterOTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CEnterOTPViewController.xib; sourceTree = "<group>"; };
+		FA069E911F4B30DD0050A30B /* T1CEnterPinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CEnterPinCodeViewController.swift; sourceTree = "<group>"; };
+		FA069E921F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CEnterPinCodeViewController.xib; sourceTree = "<group>"; };
+		FA069E961F4B316E0050A30B /* T1CRegisterSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CRegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		FA069E971F4B316E0050A30B /* T1CRegisterSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CRegisterSuccessViewController.xib; sourceTree = "<group>"; };
+		FA069E9A1F4B31A40050A30B /* T1CLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CLoginViewController.swift; sourceTree = "<group>"; };
+		FA069E9B1F4B31A40050A30B /* T1CLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CLoginViewController.xib; sourceTree = "<group>"; };
+		FA069EA01F4B31F00050A30B /* T1CVerifyEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CVerifyEmailViewController.swift; sourceTree = "<group>"; };
+		FA069EA11F4B31F00050A30B /* T1CVerifyEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CVerifyEmailViewController.xib; sourceTree = "<group>"; };
+		FA069EAA1F4B32B30050A30B /* T1CRegisterAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CRegisterAccountViewController.swift; sourceTree = "<group>"; };
+		FA069EAB1F4B32B30050A30B /* T1CRegisterAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CRegisterAccountViewController.xib; sourceTree = "<group>"; };
+		FA069EAF1F4B32F10050A30B /* T1CCreatePinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CCreatePinCodeViewController.swift; sourceTree = "<group>"; };
+		FA069EB01F4B32F10050A30B /* T1CCreatePinCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CCreatePinCodeViewController.xib; sourceTree = "<group>"; };
+		FA069EB41F4B33350050A30B /* T1CAddInfomationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CAddInfomationsViewController.swift; sourceTree = "<group>"; };
+		FA069EB51F4B33350050A30B /* T1CAddInfomationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CAddInfomationsViewController.xib; sourceTree = "<group>"; };
+		FA069EB91F4B33510050A30B /* T1CBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CBaseViewController.swift; sourceTree = "<group>"; };
+		FA069EBB1F4B33660050A30B /* T1CBaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CBaseObject.swift; sourceTree = "<group>"; };
+		FA069EC21F4B33ED0050A30B /* T1CSupportAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CSupportAccountViewController.swift; sourceTree = "<group>"; };
+		FA069EC31F4B33ED0050A30B /* T1CSupportAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CSupportAccountViewController.xib; sourceTree = "<group>"; };
+		FA069EC71F4B34160050A30B /* T1CSetupPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CSetupPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		FA069EC81F4B34160050A30B /* T1CSetupPhoneNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CSetupPhoneNumberViewController.xib; sourceTree = "<group>"; };
+		FA069ECB1F4B34790050A30B /* T1CTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CTextField.swift; sourceTree = "<group>"; };
+		FA069ED21F4B34D40050A30B /* T1CLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CLabel.swift; sourceTree = "<group>"; };
+		FA069EDB1F4B39FD0050A30B /* T1CConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CConstants.swift; sourceTree = "<group>"; };
+		FA069EDD1F4B3A0A0050A30B /* T1CAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CAPI.swift; sourceTree = "<group>"; };
+		FA069EE21F4B3C4B0050A30B /* T1CNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CNavigationViewController.swift; sourceTree = "<group>"; };
+		FA069EE41F4B44C30050A30B /* T1CButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CButton.swift; sourceTree = "<group>"; };
+		FA069EE71F4B45BB0050A30B /* T1CBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CBaseTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA069E401F4B2E790050A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA069E541F4B2E7A0050A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA069E5F1F4B2E7A0050A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA069E3A1F4B2E790050A30B = {
+			isa = PBXGroup;
+			children = (
+				FA069E781F4B2F1F0050A30B /* Controllers */,
+				FA069EE01F4B3BEF0050A30B /* Libs */,
+				FA069E791F4B2F1F0050A30B /* Models */,
+				FA069E7A1F4B2F1F0050A30B /* Resources */,
+				FA069E7B1F4B2F1F0050A30B /* Views */,
+				FA069E451F4B2E790050A30B /* The1Card */,
+				FA069E5A1F4B2E7A0050A30B /* The1CardTests */,
+				FA069E651F4B2E7A0050A30B /* The1CardUITests */,
+				FA069E441F4B2E790050A30B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA069E441F4B2E790050A30B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E431F4B2E790050A30B /* The1Card.app */,
+				FA069E571F4B2E7A0050A30B /* The1CardTests.xctest */,
+				FA069E621F4B2E7A0050A30B /* The1CardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA069E451F4B2E790050A30B /* The1Card */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E461F4B2E790050A30B /* AppDelegate.swift */,
+				FA069E4A1F4B2E790050A30B /* Main.storyboard */,
+				FA069E4D1F4B2E790050A30B /* Assets.xcassets */,
+				FA069E4F1F4B2E790050A30B /* LaunchScreen.storyboard */,
+				FA069E521F4B2E790050A30B /* Info.plist */,
+			);
+			path = The1Card;
+			sourceTree = "<group>";
+		};
+		FA069E5A1F4B2E7A0050A30B /* The1CardTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E5B1F4B2E7A0050A30B /* The1CardTests.swift */,
+				FA069E5D1F4B2E7A0050A30B /* Info.plist */,
+			);
+			path = The1CardTests;
+			sourceTree = "<group>";
+		};
+		FA069E651F4B2E7A0050A30B /* The1CardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E661F4B2E7A0050A30B /* The1CardUITests.swift */,
+				FA069E681F4B2E7A0050A30B /* Info.plist */,
+			);
+			path = The1CardUITests;
+			sourceTree = "<group>";
+		};
+		FA069E781F4B2F1F0050A30B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EB31F4B33110050A30B /* AddInfomations */,
+				FA069EB81F4B33390050A30B /* Base */,
+				FA069EAE1F4B32DD0050A30B /* CreatePinCode */,
+				FA069E8B1F4B309E0050A30B /* EnterOTP */,
+				FA069E901F4B30C00050A30B /* EnterPinCode */,
+				FA069EE11F4B3C260050A30B /* Navigation */,
+				FA069E9E1F4B31AC0050A30B /* Login */,
+				FA069EA91F4B32710050A30B /* RegisterAccount */,
+				FA069E951F4B315B0050A30B /* RegisterSuccess */,
+				FA069E9F1F4B31DB0050A30B /* VerifyEmail */,
+				FA069E861F4B30650050A30B /* VerifiPhone */,
+				FA069EC61F4B34020050A30B /* SetupPhoneNumber */,
+				FA069EC11F4B33D20050A30B /* Support */,
+				FA069E811F4B301C0050A30B /* Startup */,
+				FA069E801F4B2FBF0050A30B /* Welcome */,
+			);
+			name = Controllers;
+			path = The1Card/Controllers;
+			sourceTree = "<group>";
+		};
+		FA069E791F4B2F1F0050A30B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA069ED81F4B39CC0050A30B /* API */,
+				FA069ED41F4B37C90050A30B /* Constant */,
+				FA069EBD1F4B33710050A30B /* Base */,
+			);
+			name = Models;
+			path = The1Card/Models;
+			sourceTree = "<group>";
+		};
+		FA069E7A1F4B2F1F0050A30B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = The1Card/Resources;
+			sourceTree = "<group>";
+		};
+		FA069E7B1F4B2F1F0050A30B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EE61F4B45A20050A30B /* TableViewCell */,
+				FA069ED11F4B34C10050A30B /* Label */,
+				FA069ECE1F4B34A20050A30B /* Button */,
+				FA069ECD1F4B34800050A30B /* TextField */,
+			);
+			name = Views;
+			path = The1Card/Views;
+			sourceTree = "<group>";
+		};
+		FA069E801F4B2FBF0050A30B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E7C1F4B2F5F0050A30B /* T1CWelcomeViewController.swift */,
+				FA069E7D1F4B2F5F0050A30B /* T1CWelcomeViewController.xib */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		FA069E811F4B301C0050A30B /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E821F4B30360050A30B /* T1CStartupViewController.swift */,
+			);
+			name = Startup;
+			sourceTree = "<group>";
+		};
+		FA069E861F4B30650050A30B /* VerifiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E871F4B30800050A30B /* T1CVerifyPhoneNumberViewController.swift */,
+				FA069E881F4B30800050A30B /* T1CVerifyPhoneNumberViewController.xib */,
+			);
+			name = VerifiPhone;
+			sourceTree = "<group>";
+		};
+		FA069E8B1F4B309E0050A30B /* EnterOTP */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E8C1F4B30B40050A30B /* T1CEnterOTPViewController.swift */,
+				FA069E8D1F4B30B40050A30B /* T1CEnterOTPViewController.xib */,
+			);
+			name = EnterOTP;
+			sourceTree = "<group>";
+		};
+		FA069E901F4B30C00050A30B /* EnterPinCode */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E911F4B30DD0050A30B /* T1CEnterPinCodeViewController.swift */,
+				FA069E921F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib */,
+			);
+			name = EnterPinCode;
+			sourceTree = "<group>";
+		};
+		FA069E951F4B315B0050A30B /* RegisterSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E961F4B316E0050A30B /* T1CRegisterSuccessViewController.swift */,
+				FA069E971F4B316E0050A30B /* T1CRegisterSuccessViewController.xib */,
+			);
+			name = RegisterSuccess;
+			sourceTree = "<group>";
+		};
+		FA069E9E1F4B31AC0050A30B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA069E9A1F4B31A40050A30B /* T1CLoginViewController.swift */,
+				FA069E9B1F4B31A40050A30B /* T1CLoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FA069E9F1F4B31DB0050A30B /* VerifyEmail */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EA01F4B31F00050A30B /* T1CVerifyEmailViewController.swift */,
+				FA069EA11F4B31F00050A30B /* T1CVerifyEmailViewController.xib */,
+			);
+			name = VerifyEmail;
+			sourceTree = "<group>";
+		};
+		FA069EA91F4B32710050A30B /* RegisterAccount */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EAA1F4B32B30050A30B /* T1CRegisterAccountViewController.swift */,
+				FA069EAB1F4B32B30050A30B /* T1CRegisterAccountViewController.xib */,
+			);
+			name = RegisterAccount;
+			sourceTree = "<group>";
+		};
+		FA069EAE1F4B32DD0050A30B /* CreatePinCode */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EAF1F4B32F10050A30B /* T1CCreatePinCodeViewController.swift */,
+				FA069EB01F4B32F10050A30B /* T1CCreatePinCodeViewController.xib */,
+			);
+			name = CreatePinCode;
+			sourceTree = "<group>";
+		};
+		FA069EB31F4B33110050A30B /* AddInfomations */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EB41F4B33350050A30B /* T1CAddInfomationsViewController.swift */,
+				FA069EB51F4B33350050A30B /* T1CAddInfomationsViewController.xib */,
+			);
+			name = AddInfomations;
+			sourceTree = "<group>";
+		};
+		FA069EB81F4B33390050A30B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EB91F4B33510050A30B /* T1CBaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		FA069EBD1F4B33710050A30B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EBB1F4B33660050A30B /* T1CBaseObject.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		FA069EC11F4B33D20050A30B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EC21F4B33ED0050A30B /* T1CSupportAccountViewController.swift */,
+				FA069EC31F4B33ED0050A30B /* T1CSupportAccountViewController.xib */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		FA069EC61F4B34020050A30B /* SetupPhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EC71F4B34160050A30B /* T1CSetupPhoneNumberViewController.swift */,
+				FA069EC81F4B34160050A30B /* T1CSetupPhoneNumberViewController.xib */,
+			);
+			name = SetupPhoneNumber;
+			sourceTree = "<group>";
+		};
+		FA069ECD1F4B34800050A30B /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				FA069ECB1F4B34790050A30B /* T1CTextField.swift */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		FA069ECE1F4B34A20050A30B /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EE41F4B44C30050A30B /* T1CButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		FA069ED11F4B34C10050A30B /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				FA069ED21F4B34D40050A30B /* T1CLabel.swift */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		FA069ED41F4B37C90050A30B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EDB1F4B39FD0050A30B /* T1CConstants.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		FA069ED81F4B39CC0050A30B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EDD1F4B3A0A0050A30B /* T1CAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		FA069EE01F4B3BEF0050A30B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
+			path = The1Card/Libs;
+			sourceTree = "<group>";
+		};
+		FA069EE11F4B3C260050A30B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EE21F4B3C4B0050A30B /* T1CNavigationViewController.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		FA069EE61F4B45A20050A30B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA069EE71F4B45BB0050A30B /* T1CBaseTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA069E421F4B2E790050A30B /* The1Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA069E6B1F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1Card" */;
+			buildPhases = (
+				FA069E3F1F4B2E790050A30B /* Sources */,
+				FA069E401F4B2E790050A30B /* Frameworks */,
+				FA069E411F4B2E790050A30B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = The1Card;
+			productName = The1Card;
+			productReference = FA069E431F4B2E790050A30B /* The1Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA069E561F4B2E7A0050A30B /* The1CardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA069E6E1F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1CardTests" */;
+			buildPhases = (
+				FA069E531F4B2E7A0050A30B /* Sources */,
+				FA069E541F4B2E7A0050A30B /* Frameworks */,
+				FA069E551F4B2E7A0050A30B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA069E591F4B2E7A0050A30B /* PBXTargetDependency */,
+			);
+			name = The1CardTests;
+			productName = The1CardTests;
+			productReference = FA069E571F4B2E7A0050A30B /* The1CardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA069E611F4B2E7A0050A30B /* The1CardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA069E711F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1CardUITests" */;
+			buildPhases = (
+				FA069E5E1F4B2E7A0050A30B /* Sources */,
+				FA069E5F1F4B2E7A0050A30B /* Frameworks */,
+				FA069E601F4B2E7A0050A30B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA069E641F4B2E7A0050A30B /* PBXTargetDependency */,
+			);
+			name = The1CardUITests;
+			productName = The1CardUITests;
+			productReference = FA069E621F4B2E7A0050A30B /* The1CardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA069E3B1F4B2E790050A30B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aleph-Labs";
+				TargetAttributes = {
+					FA069E421F4B2E790050A30B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					FA069E561F4B2E7A0050A30B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA069E421F4B2E790050A30B;
+					};
+					FA069E611F4B2E7A0050A30B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA069E421F4B2E790050A30B;
+					};
+				};
+			};
+			buildConfigurationList = FA069E3E1F4B2E790050A30B /* Build configuration list for PBXProject "The1Card" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA069E3A1F4B2E790050A30B;
+			productRefGroup = FA069E441F4B2E790050A30B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA069E421F4B2E790050A30B /* The1Card */,
+				FA069E561F4B2E7A0050A30B /* The1CardTests */,
+				FA069E611F4B2E7A0050A30B /* The1CardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA069E411F4B2E790050A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA069E8A1F4B30800050A30B /* T1CVerifyPhoneNumberViewController.xib in Resources */,
+				FA069ECA1F4B34160050A30B /* T1CSetupPhoneNumberViewController.xib in Resources */,
+				FA069E7F1F4B2F5F0050A30B /* T1CWelcomeViewController.xib in Resources */,
+				FA069E511F4B2E790050A30B /* LaunchScreen.storyboard in Resources */,
+				FA069E9D1F4B31A40050A30B /* T1CLoginViewController.xib in Resources */,
+				FA069E941F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib in Resources */,
+				FA069EA31F4B31F00050A30B /* T1CVerifyEmailViewController.xib in Resources */,
+				FA069E991F4B316E0050A30B /* T1CRegisterSuccessViewController.xib in Resources */,
+				FA069E4E1F4B2E790050A30B /* Assets.xcassets in Resources */,
+				FA069EAD1F4B32B30050A30B /* T1CRegisterAccountViewController.xib in Resources */,
+				FA069EC51F4B33ED0050A30B /* T1CSupportAccountViewController.xib in Resources */,
+				FA069E4C1F4B2E790050A30B /* Main.storyboard in Resources */,
+				FA069EB71F4B33350050A30B /* T1CAddInfomationsViewController.xib in Resources */,
+				FA069EB21F4B32F10050A30B /* T1CCreatePinCodeViewController.xib in Resources */,
+				FA069E8F1F4B30B40050A30B /* T1CEnterOTPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA069E551F4B2E7A0050A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA069E601F4B2E7A0050A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA069E3F1F4B2E790050A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA069E891F4B30800050A30B /* T1CVerifyPhoneNumberViewController.swift in Sources */,
+				FA069EE31F4B3C4B0050A30B /* T1CNavigationViewController.swift in Sources */,
+				FA069EE51F4B44C30050A30B /* T1CButton.swift in Sources */,
+				FA069EA21F4B31F00050A30B /* T1CVerifyEmailViewController.swift in Sources */,
+				FA069EAC1F4B32B30050A30B /* T1CRegisterAccountViewController.swift in Sources */,
+				FA069ECC1F4B34790050A30B /* T1CTextField.swift in Sources */,
+				FA069E9C1F4B31A40050A30B /* T1CLoginViewController.swift in Sources */,
+				FA069EBA1F4B33510050A30B /* T1CBaseViewController.swift in Sources */,
+				FA069EB11F4B32F10050A30B /* T1CCreatePinCodeViewController.swift in Sources */,
+				FA069EBC1F4B33660050A30B /* T1CBaseObject.swift in Sources */,
+				FA069E8E1F4B30B40050A30B /* T1CEnterOTPViewController.swift in Sources */,
+				FA069ED31F4B34D40050A30B /* T1CLabel.swift in Sources */,
+				FA069E471F4B2E790050A30B /* AppDelegate.swift in Sources */,
+				FA069E7E1F4B2F5F0050A30B /* T1CWelcomeViewController.swift in Sources */,
+				FA069E931F4B30DD0050A30B /* T1CEnterPinCodeViewController.swift in Sources */,
+				FA069EDE1F4B3A0A0050A30B /* T1CAPI.swift in Sources */,
+				FA069E981F4B316E0050A30B /* T1CRegisterSuccessViewController.swift in Sources */,
+				FA069E841F4B30360050A30B /* T1CStartupViewController.swift in Sources */,
+				FA069EC91F4B34160050A30B /* T1CSetupPhoneNumberViewController.swift in Sources */,
+				FA069EDC1F4B39FD0050A30B /* T1CConstants.swift in Sources */,
+				FA069EC41F4B33ED0050A30B /* T1CSupportAccountViewController.swift in Sources */,
+				FA069EE81F4B45BB0050A30B /* T1CBaseTableViewCell.swift in Sources */,
+				FA069EB61F4B33350050A30B /* T1CAddInfomationsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA069E531F4B2E7A0050A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA069E5C1F4B2E7A0050A30B /* The1CardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA069E5E1F4B2E7A0050A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA069E671F4B2E7A0050A30B /* The1CardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA069E591F4B2E7A0050A30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA069E421F4B2E790050A30B /* The1Card */;
+			targetProxy = FA069E581F4B2E7A0050A30B /* PBXContainerItemProxy */;
+		};
+		FA069E641F4B2E7A0050A30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA069E421F4B2E790050A30B /* The1Card */;
+			targetProxy = FA069E631F4B2E7A0050A30B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA069E4A1F4B2E790050A30B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA069E4B1F4B2E790050A30B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA069E4F1F4B2E790050A30B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA069E501F4B2E790050A30B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA069E691F4B2E7A0050A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA069E6A1F4B2E7A0050A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA069E6C1F4B2E7A0050A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = The1Card/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleph-labs.The1Card";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA069E6D1F4B2E7A0050A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = The1Card/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleph-labs.The1Card";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA069E6F1F4B2E7A0050A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = The1CardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleph-labs.The1CardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The1Card.app/The1Card";
+			};
+			name = Debug;
+		};
+		FA069E701F4B2E7A0050A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = The1CardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleph-labs.The1CardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The1Card.app/The1Card";
+			};
+			name = Release;
+		};
+		FA069E721F4B2E7A0050A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = The1CardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleph-labs.The1CardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = The1Card;
+			};
+			name = Debug;
+		};
+		FA069E731F4B2E7A0050A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = The1CardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleph-labs.The1CardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = The1Card;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA069E3E1F4B2E790050A30B /* Build configuration list for PBXProject "The1Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA069E691F4B2E7A0050A30B /* Debug */,
+				FA069E6A1F4B2E7A0050A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA069E6B1F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA069E6C1F4B2E7A0050A30B /* Debug */,
+				FA069E6D1F4B2E7A0050A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA069E6E1F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1CardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA069E6F1F4B2E7A0050A30B /* Debug */,
+				FA069E701F4B2E7A0050A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA069E711F4B2E7A0050A30B /* Build configuration list for PBXNativeTarget "The1CardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA069E721F4B2E7A0050A30B /* Debug */,
+				FA069E731F4B2E7A0050A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA069E3B1F4B2E790050A30B /* Project object */;
+}
