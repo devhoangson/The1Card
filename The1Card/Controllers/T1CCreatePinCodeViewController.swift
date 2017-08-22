@@ -8,12 +8,23 @@
 
 import UIKit
 
-class T1CCreatePinCodeViewController: T1CBaseViewController {
+class T1CCreatePinCodeViewController: T1CBaseViewController, UITextFieldDelegate {
 
+    @IBOutlet var textField: T1CTextField?
+    var keyboardView: T1CKeyboardView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func setupUI() {
+        super.setupUI()
+        self.keyboardView = Bundle.main.loadNibNamed("T1CKeyboardView",
+                                                   owner: nil,
+                                                   options: nil)?.first as? T1CKeyboardView
+        self.textField?.inputView = self.keyboardView
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +32,8 @@ class T1CCreatePinCodeViewController: T1CBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    */
-
 }

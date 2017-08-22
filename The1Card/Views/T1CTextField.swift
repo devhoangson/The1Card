@@ -20,9 +20,6 @@ class T1CTextField: UITextField {
     private let FONT_SIZE: CGFloat = 12
 
     private var imageView: UIImageView?
-    
-    @IBInspectable var inset: CGFloat = 0
- 
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -22,14 +22,13 @@ class T1CVerifyPhoneNumberViewController: T1CBaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func correctNumberAction(sender: AnyObject) {
+        let enterOTPViewController = T1CEnterOTPViewController(nibName: String(describing: T1CEnterOTPViewController.self), bundle: nil)
+        self.navigationController?.pushViewController(enterOTPViewController, animated: true)
     }
-    */
+    
+    @IBAction func incorrectNumberAction(sender: AnyObject) {
+        
+    }
 
 }

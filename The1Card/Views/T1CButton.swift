@@ -28,6 +28,7 @@ class T1CButton: UIButton {
         self.setupUI()
     }
     
+    
     func setupUI() {
         self.clipsToBounds = true
         self.layer.cornerRadius = CORNER_RADIUS

@@ -51,6 +51,10 @@
 		FA069EE31F4B3C4B0050A30B /* T1CNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EE21F4B3C4B0050A30B /* T1CNavigationViewController.swift */; };
 		FA069EE51F4B44C30050A30B /* T1CButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EE41F4B44C30050A30B /* T1CButton.swift */; };
 		FA069EE81F4B45BB0050A30B /* T1CBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069EE71F4B45BB0050A30B /* T1CBaseTableViewCell.swift */; };
+		FAF80F551F4C6AA000BC52FC /* T1CPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF80F541F4C6AA000BC52FC /* T1CPickerView.swift */; };
+		FAF80F571F4C6AEA00BC52FC /* T1CPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF80F561F4C6AEA00BC52FC /* T1CPickerView.xib */; };
+		FAF80F5C1F4C6F1400BC52FC /* T1CKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF80F5B1F4C6F1400BC52FC /* T1CKeyboardView.xib */; };
+		FAF80F5E1F4C6F2800BC52FC /* T1CKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF80F5D1F4C6F2800BC52FC /* T1CKeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +125,10 @@
 		FA069EE21F4B3C4B0050A30B /* T1CNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CNavigationViewController.swift; sourceTree = "<group>"; };
 		FA069EE41F4B44C30050A30B /* T1CButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CButton.swift; sourceTree = "<group>"; };
 		FA069EE71F4B45BB0050A30B /* T1CBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CBaseTableViewCell.swift; sourceTree = "<group>"; };
+		FAF80F541F4C6AA000BC52FC /* T1CPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CPickerView.swift; sourceTree = "<group>"; };
+		FAF80F561F4C6AEA00BC52FC /* T1CPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CPickerView.xib; sourceTree = "<group>"; };
+		FAF80F5B1F4C6F1400BC52FC /* T1CKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T1CKeyboardView.xib; sourceTree = "<group>"; };
+		FAF80F5D1F4C6F2800BC52FC /* T1CKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T1CKeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +275,8 @@
 		FA069E7B1F4B2F1F0050A30B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAF80F581F4C6ECF00BC52FC /* KeyBoardView */,
+				FAF80F4F1F4C55BD00BC52FC /* PickerView */,
 				EB2F000F1F4C364300E50169 /* View */,
 				FA069EE61F4B45A20050A30B /* TableViewCell */,
 				FA069ED11F4B34C10050A30B /* Label */,
@@ -473,6 +483,24 @@
 			name = TableViewCell;
 			sourceTree = "<group>";
 		};
+		FAF80F4F1F4C55BD00BC52FC /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF80F541F4C6AA000BC52FC /* T1CPickerView.swift */,
+				FAF80F561F4C6AEA00BC52FC /* T1CPickerView.xib */,
+			);
+			name = PickerView;
+			sourceTree = "<group>";
+		};
+		FAF80F581F4C6ECF00BC52FC /* KeyBoardView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF80F5D1F4C6F2800BC52FC /* T1CKeyboardView.swift */,
+				FAF80F5B1F4C6F1400BC52FC /* T1CKeyboardView.xib */,
+			);
+			name = KeyBoardView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -588,8 +616,10 @@
 				EB2F000E1F4C2F5D00E50169 /* back@2x.png in Resources */,
 				EB2F000A1F4BF24100E50169 /* no-image-available.png in Resources */,
 				FA069E9D1F4B31A40050A30B /* T1CLoginViewController.xib in Resources */,
+				FAF80F5C1F4C6F1400BC52FC /* T1CKeyboardView.xib in Resources */,
 				FA069E941F4B30DD0050A30B /* T1CEnterPinCodeViewController.xib in Resources */,
 				FA069EA31F4B31F00050A30B /* T1CVerifyEmailViewController.xib in Resources */,
+				FAF80F571F4C6AEA00BC52FC /* T1CPickerView.xib in Resources */,
 				FA069E991F4B316E0050A30B /* T1CRegisterSuccessViewController.xib in Resources */,
 				FA069E4E1F4B2E790050A30B /* Assets.xcassets in Resources */,
 				FA069EAD1F4B32B30050A30B /* T1CRegisterAccountViewController.xib in Resources */,
@@ -622,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF80F5E1F4C6F2800BC52FC /* T1CKeyboardView.swift in Sources */,
 				FA069E891F4B30800050A30B /* T1CVerifyPhoneNumberViewController.swift in Sources */,
 				FA069EE31F4B3C4B0050A30B /* T1CNavigationViewController.swift in Sources */,
 				FA069EE51F4B44C30050A30B /* T1CButton.swift in Sources */,
@@ -643,6 +674,7 @@
 				FA069E841F4B30360050A30B /* T1CStartupViewController.swift in Sources */,
 				FA069EC91F4B34160050A30B /* T1CSetupPhoneNumberViewController.swift in Sources */,
 				FA069EDC1F4B39FD0050A30B /* T1CConstants.swift in Sources */,
+				FAF80F551F4C6AA000BC52FC /* T1CPickerView.swift in Sources */,
 				FA069EC41F4B33ED0050A30B /* T1CSupportAccountViewController.swift in Sources */,
 				FA069EE81F4B45BB0050A30B /* T1CBaseTableViewCell.swift in Sources */,
 				FA069EB61F4B33350050A30B /* T1CAddInfomationsViewController.swift in Sources */,
